@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> form </title>
+	<meta charset = "utf-8">
+	<meta name="Describe the forms " content="Welcome to the this Page ">
+
+	<script></script>
+	<style>
+		body{background: #EFEFEF; font-family: Arial , Tahoma}
+		fieldset
+		{
+			background: #FFF;  
+			border:1px solid #CCC;
+			padding:20px;
+			margin-bottom: 20px
+		}
+		legend
+		{
+			background: #FFF;
+			border:1px solid #CCC;
+			padding: 10px
+		}
+		label
+		{
+			margin-bottom: 10px;
+			display: block;
+		}
+		input
+		{
+			margin-bottom: 10px;
+			
+		}
+		input[type="text"],
+		input[type="password"]
+		{
+			padding: 8px;
+			width:300px;
+			display: block;
+
+		}
+		hr
+		{
+			border:1px solid #EEE;
+		}
+		textarea
+		{
+			padding: 10px;
+			width: 400px;
+			height: 200px;
+		}
+
+	</style>
+
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend>Personal Information</legend>
+			<label>Username</label>
+			<input type="text" name="username">
+			<label>Password</label>
+			<input type="Password" name="password">
+			<label>E-mail</label>
+			<input type="text" name="email">
+			<label>Gender</label>
+			<select>
+				<option>Male</option>
+				<option>Female</option>
+			</select>
+		</fieldset>
+		<fieldset>
+			<legend>Your Favourites</legend>
+			<label>Your Fav Editors</label><br>
+			<input type="radio" name="editor">KomboEdit<br>
+			<input type="radio" name="editor">Netbeans<br>
+			<input type="radio" name="editor">SublimeText
+			<hr>
+			<label>Your Fav Browser</label><br>
+			<input type="radio" name="browser">Google Chrome<br>
+			<input type="radio" name="browser">Mozilla Firefox<br>
+			<input type="radio" name="browser">Opera
+			<hr>
+			<label>Your Fav Operating System</label><br>
+			<input type="radio" name="os">Mac OSX<br>
+			<input type="radio" name="os">Linux<br>
+			<input type="radio" name="os">Windows
+		</fieldset>
+			<fieldset>
+				<legend>Your Massage</legend>
+				<textarea></textarea>
+				<input type="submit" value="Send Your Data">
+			</fieldset>
+		</fieldset>
+	</form>
+</body>
+</html>
